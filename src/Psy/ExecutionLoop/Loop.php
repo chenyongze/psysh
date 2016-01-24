@@ -143,9 +143,7 @@ class Loop
      */
     public function beforeLoop(Shell $shell)
     {
-        foreach ($shell->listeners as $listener) {
-            $listener->onAfterLoop($shell);
-        }
+        // no-op
     }
 
     /**
@@ -156,9 +154,7 @@ class Loop
      */
     public function afterLoop(Shell $shell)
     {
-        foreach ($shell->listeners as $listener) {
-            $listener->onAfterLoop($shell);
-        }
+        // no-op
     }
 
     /**
